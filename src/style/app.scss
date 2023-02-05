@@ -1,0 +1,46 @@
+$textyColor : white;
+$idColor : rgba(213,534,53,1);
+
+
+.App {
+    text-align: center;
+}
+
+body {
+    background-color: rgba(31, 147, 165, 0.774);
+    color: $textyColor;
+}
+
+.taskBorder{
+    justify-content: space-around;
+}
+
+.taskBg{
+    background-color: rgb(56, 58, 75);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px 140px 10px 15px;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+    .done{
+        text-decoration: line-through;
+        .taskText {
+            opacity: 0.3;
+        }
+    }
+
+    .taskNumber{
+        color: $idColor;
+        border: 1px solid #999;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        display: flex ;
+        text-align: center;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
